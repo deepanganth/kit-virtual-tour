@@ -9,11 +9,11 @@ import Navbar from './components/Navbar';
 function App() {
   return (
     <Routes>
-      <Route exact path='/' Component={Home}/>
-      <Route path='/center' Component={CenterBlock}/>
-      <Route path='/west' Component={WestBlock}/>
-      <Route path='/east' Component={EastBlock}/>
-      <Route path='/nav' Component={Navbar}/>
+      <Route exact path='kit' element={<Home/>}/>
+      <Route path='center' element={<CenterBlock/>}/>
+      <Route path='west' element={<WestBlock/>}/>
+      <Route path='east' element={<EastBlock/>}/>
+      <Route path='nav' element={<Navbar/>}/>
     </Routes>
   );
 }
