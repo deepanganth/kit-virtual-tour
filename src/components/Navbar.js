@@ -36,7 +36,7 @@ function Navbar() {
       )}
       {showDiv && (
         <div className="wrapper" ref={containerRef}>
-          <Link style={linkStyle} to="/">
+          <Link style={linkStyle} to="/kit">
             <div className="box box-1"><p>Home</p></div>
           </Link>
           <Link style={linkStyle} to="/center">

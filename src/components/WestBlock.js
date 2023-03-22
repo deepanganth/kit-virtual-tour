@@ -5,9 +5,10 @@ import { Canvas, extend, useFrame, useThree, useLoader } from '@react-three/fibe
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import display from './assets/kit2.glb';
-import kit from './assets/westBlock.jpg' 
+import kit from './assets/westBlock.jpg'
 import Navbar from './Navbar';
 import './All.css'
+import { ProgressBar } from "react-loader-spinner";
 
 extend({ OrbitControls })
 
@@ -41,23 +42,34 @@ function Object() {
 }
 
 class kitFront extends Component {
-    state = {  } 
-    render() { 
-        return (
-          <div className='canva'>
-          <Navbar/>
-        <Canvas camera={{ position: [0, 0, 0.1] }}>
-            <Controls enableZoom={false} enablePan={false} enableDamping dampingFactor={0.2} autoRotateSpeed={1} autoRotate rotateSpeed={-0.5} />
-            <ambientLight intensity={0.5} />
-            <spotLight intensity={0.8} position={[300, 300, 400]} />
-            <Suspense fallback={null}>
-                <Dome />
-                <Object/>
-            </Suspense>
-        </Canvas>
+  state = {}
+  render() {
+    return (
+      <div className='canva'>
+        <Navbar />
+        <div className="loader">
+          <ProgressBar
+            height="80"
+            width="80"
+            ariaLabel="progress-bar-loading"
+            wrapperStyle={{}}
+            wrapperClass="progress-bar-wrapper"
+            borderColor="black"
+            barColor="#F4442E"
+          />
         </div>
-        );
-    }
+        <Canvas camera={{ position: [0, 0, 0.1] }}>
+          <Controls enableZoom={false} enablePan={false} enableDamping dampingFactor={0.2} autoRotateSpeed={1} autoRotate rotateSpeed={-0.5} />
+          <ambientLight intensity={0.5} />
+          <spotLight intensity={0.8} position={[300, 300, 400]} />
+          <Suspense fallback={null}>
+            <Dome />
+            <Object />
+          </Suspense>
+        </Canvas>
+      </div>
+    );
+  }
 }
- 
+
 export default kitFront;

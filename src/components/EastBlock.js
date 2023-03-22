@@ -8,6 +8,7 @@ import display from './assets/kit2.glb';
 import kit from './assets/eastBlock.jpg' 
 import Navbar from './Navbar';
 import './All.css'
+import { ProgressBar } from "react-loader-spinner";
 
 extend({ OrbitControls })
 
@@ -46,6 +47,17 @@ class kitFront extends Component {
         return (
           <div className='canva'>
           <Navbar/>
+          <div className="loader">
+          <ProgressBar
+            height="80"
+            width="80"
+            ariaLabel="progress-bar-loading"
+            wrapperStyle={{}}
+            wrapperClass="progress-bar-wrapper"
+            borderColor="black"
+            barColor="#F4442E"
+          />
+        </div>
         <Canvas camera={{ position: [0, 0, 0.1] }}>
             <Controls enableZoom={false} enablePan={false} enableDamping dampingFactor={0.2} autoRotateSpeed={1} autoRotate rotateSpeed={-0.5} />
             <ambientLight intensity={0.5} />
