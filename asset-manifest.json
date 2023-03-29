@@ -1,10 +1,8 @@
 {
   "files": {
-    "main.css": "/kit-virtual-tour/static/css/main.2083a9ba.css",
-    "main.js": "/kit-virtual-tour/static/js/main.9e578879.js",
+    "main.css": "/kit-virtual-tour/static/css/main.e62fd46c.css",
+    "main.js": "/kit-virtual-tour/static/js/main.4e7ba0fc.js",
     "static/js/787.cb4b7678.chunk.js": "/kit-virtual-tour/static/js/787.cb4b7678.chunk.js",
-    "static/media/locationpnt1.glb": "/kit-virtual-tour/static/media/locationpnt1.302eb5169e8ad59fa641.glb",
-    "static/media/locationpnt2.glb": "/kit-virtual-tour/static/media/locationpnt2.302eb5169e8ad59fa641.glb",
     "static/media/kit.jpg": "/kit-virtual-tour/static/media/kit.ce652f3f6b207010a82c.jpg",
     "static/media/westBlock.jpg": "/kit-virtual-tour/static/media/westBlock.f05bd342c05cd74b4e58.jpg",
     "static/media/eastBlock.jpg": "/kit-virtual-tour/static/media/eastBlock.c7de04111de101a8ef00.jpg",
@@ -16,12 +14,12 @@
     "static/media/west-box.jpg": "/kit-virtual-tour/static/media/west-box.7a955cc89db2753810ea.jpg",
     "static/media/east-box.jpg": "/kit-virtual-tour/static/media/east-box.d9b60febfb2f599f7ba2.jpg",
     "index.html": "/kit-virtual-tour/index.html",
-    "main.2083a9ba.css.map": "/kit-virtual-tour/static/css/main.2083a9ba.css.map",
-    "main.9e578879.js.map": "/kit-virtual-tour/static/js/main.9e578879.js.map",
+    "main.e62fd46c.css.map": "/kit-virtual-tour/static/css/main.e62fd46c.css.map",
+    "main.4e7ba0fc.js.map": "/kit-virtual-tour/static/js/main.4e7ba0fc.js.map",
     "787.cb4b7678.chunk.js.map": "/kit-virtual-tour/static/js/787.cb4b7678.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2083a9ba.css",
-    "static/js/main.9e578879.js"
+    "static/css/main.e62fd46c.css",
+    "static/js/main.4e7ba0fc.js"
   ]
 }
